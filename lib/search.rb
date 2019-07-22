@@ -12,7 +12,3 @@ def search(node)
     node
   end
 end
-
-def stringify_node(node)
-  "#{node.payload}"
-end
