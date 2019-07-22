@@ -16,7 +16,7 @@ RSpec.describe Tree, type: :model do
       trunk   = Tree.new(2, [seventh_node, shallow_fifth_node])
       # It's returning an array for some reason
       # expect(search(trunk)[1].payload).to eq(11)
-      expect(search(trunk).payload).to eq(11)
+      expect(print_tree(trunk).payload).to eq(11)
     end
 
   end

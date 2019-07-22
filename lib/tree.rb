@@ -1,5 +1,3 @@
-require_relative 'search'
-
 class Tree
   attr_accessor :payload, :children
  
