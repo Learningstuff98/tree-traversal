@@ -14,7 +14,8 @@ RSpec.describe Tree, type: :model do
       shallow_fifth_node = Tree.new(5, [ninth_node])
 
       trunk   = Tree.new(2, [seventh_node, shallow_fifth_node])
-      expect(search(trunk)).to eq(11)
+      expect(stringify_node(search(trunk))).to eq('11')
+      # expect(stringify_node(eleventh_node)).to eq('11')
     end
 
   end
